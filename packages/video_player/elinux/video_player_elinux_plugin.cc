@@ -60,6 +60,7 @@ class VideoPlayerPlugin : public flutter::Plugin {
         texture_registrar_(texture_registrar) {
     // Needs to call 'gst_init' that initializing the GStreamer library before
     // using it.
+            printf("LOAD VideoPlayerPlugin PPPPPPPPPPPPPPPPPPPPPPP\n");
     GstVideoPlayer::GstLibraryLoad();
   }
   virtual ~VideoPlayerPlugin() {
