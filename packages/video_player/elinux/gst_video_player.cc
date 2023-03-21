@@ -18,6 +18,7 @@ GstVideoPlayer::GstVideoPlayer(
   gst_.buffer = nullptr;
 
   uri_ = ParseUri(uri);
+      std::cout << "URIIIIIIIIIIIIIIIIIIIIIIIIIIII" << std::endl;
   if (!CreatePipeline()) {
     std::cerr << "Failed to create a pipeline" << std::endl;
     DestroyPipeline();
